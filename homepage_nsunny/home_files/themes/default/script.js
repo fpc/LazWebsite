@@ -1,0 +1,1 @@
+//This script file is used in all pages

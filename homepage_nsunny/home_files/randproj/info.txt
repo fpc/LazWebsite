@@ -1,0 +1,5 @@
+3D Image Commander|http://www.binerus.com/|3D Image Commander allows designers to add a variety of fully customized 3d effects to their photos and images. This can all be done in real time as well. This program is built using FPC, Lazarus and DXScene library. |3dim.jpg
+gdvdslides|http://rimrocksoftware.com/node/2|gdvdslides allows you to create a video from a set of video clips, JPEG image files and audio files. It supports slide transitions, title slides, background images and multiple audio tracks,cropping, effects etc.|gdvdslides.jpg
+KSP Sound Player|http://code.google.com/p/kspnew/|KSP is relatively new audio player that already supports almost all features any modern powerful player has to support. However KSP is still player easy in use and intuitive, something that you can call really user oriented. |ksp.jpg
+LazPaint|http://wiki.freepascal.org/LazPaint|LazPaint is an image editor with antialiasing and alpha blending, layers, providing many features like gradients, deformation, filters... |lazpaint.jpg
+MyNotex|http://sites.google.com/site/mynotex/|MyNotex is a free software for Gnu/Linux useful to take and to manage textual notes.|mynotex.jpg

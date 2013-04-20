@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{ $page_title }</title>
+	<meta name="description" content="{ $page_meta_description }" />
+	<meta name="keywords" content="{ $page_meta_keywords }" />
+	<meta name="author" content="{ $page_author }" />
+	<meta name="copyright" content="Lazarus" />
+
+	<link rel="stylesheet" type="text/css" href="{ $theme_path }style.css" />
+{if $ishome eq "True"}
+	<script type="text/javascript" src="{ $theme_path }script_home.js"></script>
+{/if}
+	<script type="text/javascript" src="{ $theme_path }script.js"></script>
+	
+{ $extra_head_content }
+
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="top_bar">
+		<div class="top_logo">
+		<a href="{ $home_php_name }"><img src="{ $theme_path }images/top_logo.png" /></a>
+		</div>
+		<div class="top_links">
+		<a href="{ $home_php_name }">Home</a>
+		<a href="{ $home_php_name }?page=about">About</a>
+		<a href="http://wiki.lazarus.freepascal.org/Screenshots">Screenshots</a>
+		<a href="http://wiki.freepascal.org/Lazarus_Faq">FAQ</a>
+		<a href="{ $home_php_name }?page=features">Features</a>
+		<a href="{ $home_php_name }?page=downloads">Downloads</a>
+		<a href="{ $smf_home }">Forum</a>
+		<a href="http://wiki.freepascal.org/">Wiki</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	{if $ishome eq "True"}
+	
+	<div class="slidewrap">
+		<div class="left_shot"><a href="http://wiki.lazarus.freepascal.org/Screenshots"><img src="{ $theme_path }images/homeshot_1.gif" alt="Lazarus Screenshot" title="Lazarus IDE" /></a></div>
+		<div class="slider_r">
+		<h1>Lazarus</h1>
+		<h2>The professional Free Pascal RAD IDE</h2>
+		<ul class="right">
+			<li>Cross platform</li>
+			<li>Drag &amp; Drop Form Designer</li>
+			<li>Open source (GPL/LGPL)</li>
+			<li>Delphi converter</li>
+		</ul>
+		<!--<p><a href="{ $home_php_name }?page=downloads" id="dl_btn" class="download_btn">Download</a></p>-->
+		<p><a href="{ $platform_download_link }" id="dl_btn" class="download__btn"><img src="{ $theme_path }images/download_btn.gif" /></a></p>
+		<p>{ $platform_download_for } <script>GetDlOSName();</script><noscript>| <a href="{ $home_php_name }?page=downloads">Other?</a></noscript></p>
+		<div id="dl_menu" class="dl_menu" style="display:none;">
+			<ul>
+				<li><a href="{ $dl_win32_url }">Windows 32 Bits</a></li>
+				<li><a href="{ $dl_win64_url }">Windows 64 Bits</a></li>
+				<hr />
+				<li><a href="{ $dl_deb32_url }">Linux DEB 32 Bits</a></li>
+				<li><a href="{ $dl_deb64_url }">Linux DEB 64 Bits</a></li>
+				<li><a href="{ $dl_rpm32_url }">Linux RPM 32 Bits</a></li>
+				<li><a href="{ $dl_rpm64_url }">Linux RPM 64 Bits</a></li>
+				<hr />
+				<li><a href="{ $dl_mac32_url }">Mac OS X 32 Bits</a></li>
+				<li><a href="{ $dl_macppc_url }">Mac OS X Powerpc</a></li>
+				<hr />
+				<li><a href="{ $home_php_name }?page=downloads">Other Downloads and mirrors</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	
+	<!--<div>Test: { $test }</div>-->
+	
+	<div class="hblockwrap">
+	<div class="hblock">
+		<h1>What is Lazarus?</h1>
+		<p class="para">Lazarus is a Delphi compatible cross-platform IDE for Rapid
+Application Development. It has variety of components ready for use
+and a graphical form designer to easily create complex graphical user
+interfaces.</p>
+		<p><a href="{ $home_php_name }?page=about" class="btlink">Learn more...</a>
+		<a href="http://en.wikipedia.org/wiki/Lazarus_%28IDE%29">Wikipedia</a></p>
+	</div>
+	
+	<div class="hblock">
+		<h1>What can it do?</h1>
+		<p class="para">You can create your own file browsers, image viewers, web browsers, database applications, calculation programs, graphics editing software, games, 3D software, medical analysis software and what not.</p>
+		<p><a href="http://wiki.freepascal.org/Lazarus_Application_Gallery" class="btlink">See Application Gallery</a> <a href="{ $home_php_name }?page=whyuse">Why use it?</a></p>
+	</div>
+	
+	<div class="hblock">
+		<h1>Where to learn?</h1>
+		<p class="para">Lazarus is chosen by programers from computer science students to hobbyists to experts. No matter what you want to do, Lazarus helps you to make your concepts to a reality. So take a dive...
+		</p>
+		<p><a href="http://wiki.freepascal.org/Lazarus_Tutorial" class="btlink">Start Learning</a>
+		<a href="http://wiki.freepascal.org/Pascal_and_Lazarus_Books_and_Magazines">Books</a> | <a href="http://wiki.freepascal.org/Lazarus_Documentation#Lazarus_and_Pascal_Tutorials">Online Tutorials</a></p>
+	</div>
+	
+	{*  We end the home blocks and reset their float  *}
+	<div class="clear"></div>
+	</div>
+
+
+	{* Random Project *}
+	{* { insert name="randproj" } *}
+	{* { $rand_proj } *}
+	
+	<div class="hblock3wrap">
+	
+	<div class="hfeatures column">
+		<h1>Features</h1>
+		<div class="licolumn">
+			<li>Cross-platform</li>
+			<li>Over 200 Components</li>
+			<li>Easy Drag and Drop Form Designer</li>
+			<li>Code &amp; Develop same way between platforms</li>
+			<li>Easy Object Pascal syntax</li>
+			<li>UTF-8 Compatible</li>
+			<li>Regular Releases</li>
+			<li>Converts from Delphi code</li>
+			<li>Static linking</li>
+			</ul>
+		</div>
+		<div class="licolumn rcolumn">
+		<ul>
+			<li>No extra runtime files</li>
+			<li>Code Template</li>
+			<li>Code Auto Complete</li>
+			<li>Class Completion</li>
+			<li>Incremental Search</li>
+			<li>Extendable through packages</li>
+			<li>Many Frameworks</li>
+			<li>Ready for Web Development</li>
+			<li>Humane Language style</li>
+		</ul>
+		<a href="{ $home_php_name }?page=features" class="btlink" style="margin-top:10px;float:right;">Learn more...</a>
+		</div>
+	</div>
+	
+	<div class="hplatforms column">
+	<a href="{ $home_php_name }?page=features"><img src="{ $theme_path }images/home_platforms.gif" /></a>
+	</div>
+	
+	</div>
+	
+	<div class="clear"></div>
+	
+	<a href="{ $rand_proj_link }" style="text-decoration:none">
+	<div class="randproj">
+		<h1>Random Project</h1>
+		<img src="home_files/randproj/{ $rand_proj_img }" alt="{ $rand_proj_title }" title="{ $rand_proj_title }" height="70" />
+		<p>{ $rand_proj_desc }</p>
+		<div class="clear"></div>
+	</div>
+	</a>
+	
+	
+	<div class="semispecious_block">
+	
+	<div class="left_block">
+	<div class="recent_annc">
+		<h2>Recent Announcements</h2>
+		<ul>
+		{ for start=0 stop=4 step=1 value=i }
+			<a href="{ $recent_annc_array[$i].href }"><div><h3>{ $recent_annc_array[$i].subject }</h3>
+			<p class="indent">{ $recent_annc_array[$i].time } : { $recent_annc_array[$i].preview } | Learn more...</p></div></a>
+		{ /for }
+		</ul>
+		<p><a href="{ $smf_index }/board,{ $smf_announcements_board }.0.html" class="morelink">More Announcements...</a></p>
+	</div>
+	<div class="tipofday">
+		<p><strong>Tip of the day: </strong>{ $tip_of_the_day }</p>
+	</div>
+	</div>
+	
+	<div class="recent_posts">
+		<h2>Recent Forum Posts</h2>
+		<ul>
+		{ for start=0 stop=10 step=1 value=i }
+			<li><a href="{ $recent_posts_array[$i].href }" title="{ $recent_posts_array[$i].subject }"><div {if $recent_posts_array[$i].new eq "True"}class="new"{/if}><strong>{ $recent_posts_array[$i].short_subject }</strong><br /><span>by { $recent_posts_array[$i].poster.name } ({ $recent_posts_array[$i].time })</span>
+			</div></a>
+			</li>
+		{ /for }
+		</ul>
+		<a href="{ $smf_home }" class="morelink">See all posts...</a>
+	</div>
+	
+	<div class="clear"></div>
+	</div>
+	
+	<div class="spacious_block">
+		<div class="hblock2">
+			<h3>Lazarus / Free Pascal</h3>
+			<ul>
+				<li><a href="{ $home_php_name }?page=features">Features</a></li>
+				<li><a href="{ $home_php_name }?page=whyuse">Why use it?</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Lazarus_1.0_fixes_branch">What's New</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Screenshots">Screenshots</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Roadmap">Roadmap</a></li>
+				<li><a href="http://wiki.freepascal.org/Lazarus_Faq">FAQ</a></li>
+			</ul>
+		</div>
+
+		<div class="hblock2">
+			<h3>Platforms</h3>
+			<ul>
+				<li><a href="http://wiki.lazarus.freepascal.org/Portal:Android">Android Development</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Portal:Linux">Lazarus for Linux</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Portal:Mac">Lazarus for Mac OS X</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Portal:iOS">Lazarus for iOS</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Portal:Windows">Lazarus for Windows</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Portal:Web_Development">Lazarus for Web</a></li>
+			</ul>
+		</div>
+		
+		<div class="hblock2">
+			<h3>Applications</h3>
+			<ul>
+				<li><a href="http://wiki.freepascal.org/Projects_using_Lazarus">Projects Using Lazarus</a></li>
+				<li><a href="http://wiki.freepascal.org/Lazarus_Application_Gallery">Apps created with Lazarus</a></li>
+				<li><a href="http://wiki.freepascal.org/FPC_Applications/Projects_Gallery">Apps created with Free Pascal</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Case_Studies">Case Studies</a></li>
+			</ul>
+		</div>
+
+		<div class="hblock2">
+			<h3>Download</h3>
+			<ul>
+				<li><a href="http://sourceforge.net/project/showfiles.php?group_id=89339">Stable Versions</a></li>
+				<li><a href="http://www.hu.freepascal.org/lazarus/">Daily Snapshots</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/index.php/Getting_Lazarus">Source code</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Getting_Lazarus#Lazarus_Distributions">Other Distributions</a></li>
+			</ul>
+		</div>
+		
+		<div class="clear"></div>
+		<div class="hblock2">
+			<h3>Community</h3>
+			<ul>
+				<li><a href="{ $smf_home }">Forum</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/">Wiki</a></li>
+				<li><a href="http://bugs.freepascal.org/view_all_bug_page.php?project_id=1">Bugtracker</a></li>
+				<li><a href="http://www.lazarus.freepascal.org/index.php/page,9.html">IRC Channel</a></li>
+				<li><a href="http://lazarus-dev.blogspot.com/">Developer Blog</a></li>
+				<li><a href="http://lists.lazarus.freepascal.org/mailman/listinfo">Mailing Lists</a></li>
+				<li><a href="http://twitter.com/LazarusDev">Follow us on Twitter</a></li>
+			</ul>
+		</div>
+		
+		<div class="hblock2">
+			<h3>Education</h3>
+			<ul>
+				<li><a href="http://wiki.freepascal.org/Lazarus_Documentation">Documentation</a></li>
+				<li><a href="http://wiki.freepascal.org/">Wiki</a></li>
+				<li><a href="http://wiki.freepascal.org/Pascal_and_Lazarus_Books_and_Magazines">Books and Journals</a></li>
+				<li><a href="http://lazarus-dev.blogspot.com/">Developer Blog</a></li>
+				<li><a href="http://www.lazarus.freepascal.org/index.php/page,21.html">In other languages</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Conferences_and_Events">Events</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Contests">Contests</a></li>
+			</ul>
+		</div>
+		
+		<div class="hblock2">
+			<h3>Service</h3>
+			<ul>
+				<li><a href="{ $home_php_name }?page=contact">Contact Us</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/licensing">Legal Information</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Lazarus_wiki:Privacy_policy">Privacy Policy</a></li>
+				<li><a href="http://www.lazarus.freepascal.org/index.php/board,41.0.html">Open Positions</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/Bounties">Bounties</a></li>
+				<li><a href="http://www.blaisepascal.eu/index.php?actie=./subscribers/lazarusbookinfoEnglish">The Lazarus Guide</a></li>
+				<li><a href="http://wiki.lazarus.freepascal.org/How_to_donate_to_Lazarus">Donate</a></li>
+			</ul>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	{else}{* ---------------Not homepage-------------- *}
+	
+		<div class="page">
+		{ include file=$page_content_file }
+		</div>
+	
+	{/if}
+	
+	
+	<div class="footer">
+		<p class="foot_left">&copy; 1993-2013 Lazarus and Free Pascal Team</p>
+		<div class="foot_right">
+		<a href="http://www.freepascal.org"><img src="{ $theme_path }images/footer_logo.gif" height="31" /></a>
+		<a href="http://sourceforge.net/projects/lazarus"><img src="{ $theme_path }images/footer_sf.gif" /></a>
+		<a href="http://www.ohloh.net/p/lazarus?ref=sample"><img src="{ $theme_path }images/footer_ohloh.gif" /></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
