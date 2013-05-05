@@ -1,7 +1,4 @@
-You can press [Shift]+[F9] ([Command]+[B] on Mac OS X) to only build the project. That would compile and create the executable without running it.
-You can press [F12] ([Command]+[Alt]+[F] on Mac OS X) to switch between Form View mode and source.
-Find a palette component when you cannot find one under so many tabs with View | Components or [Ctrl]+[Alt]+[P].
-Editor Auto-completion for identifiers is a helpful aid to memory. You may use it with [Ctrl]+[Space].
-Editor Auto-completion for code routines is a time-saving feature. You may use it with [Shift]+[Ctrl]+[C].
-Create an FPCUnit test application via Project | New Project to optimize critical units and to isolate bugs.
-Use the heaptrc unit (via Project Options : Linking) in order to isolate memory leaks.
+<div style="float: left; width: 35%"><h1><strong>Tip of the day: </strong></h1><p>Install the <strong>editor tool bar</strong> to get quick and easy access to your favourite features</p></div><div style="float: left; width: 65%"><img width="99%" src="home_files/images/ide_features_editor_toolbar.png"</img></div>
+<div style="float: left; width: 35%"><h1><strong>Tip of the day: </strong></h1><p>Use <strong>syncro-edit</strong> to update all occurrences of an identifier in a selected part of the source</p></div><div style="float: left; width: 65%"><img width="99%" src="home_files/images/syneditsyncro.gif"</img></div>
+<div style="float: left; width: 35%"><h1><strong>Tip of the day: </strong></h1><p>The form designer can display <strong>guide lines</strong> to help you layout your components</p></div><div style="float: left; width: 65%"><img width="99%" src="home_files/images/ide_features_design_guidelines.gif"</img></div>
+<div style="float: left; width: 35%"><h1><strong>Tip of the day: </strong></h1><p>Use the <strong>code macro "OfAll"</strong> and let the IDE write your case statements for enum values</p></div><div style="float: left; width: 65%"><img width="99%" src="home_files/images/code_macro_of_all.gif"</img></div>
