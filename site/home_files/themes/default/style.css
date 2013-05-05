@@ -461,7 +461,7 @@ background:#eee;
 border:1px SOLID #92278F;
 }
 
-.tipofday {
+.tipofdayouter {
 display:block;
 margin-top:15px;
 padding:10px;
@@ -472,8 +472,15 @@ color:#000;
 overflow:auto;
 }
 
+.tipofday {
+}
+
+.tipofdayspacer {
+float: left;
+width:2%;
+}
+
 .tipofdaytext {
-padding-right:2%;
 float: left;
 }
 

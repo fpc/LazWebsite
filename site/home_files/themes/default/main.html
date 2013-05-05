@@ -164,19 +164,23 @@ interfaces.</p>
 	<div class="semispecious_block">
 	
 	<div class="left_block">
-	<div class="recent_annc">
-		<h2>Recent Announcements</h2>
-		<ul>
-		{ for start=0 stop=4 step=1 value=i }
-			<a href="{ $recent_annc_array[$i].href }"><div><h3>{ $recent_annc_array[$i].subject }</h3>
-			<p class="indent">{ $recent_annc_array[$i].time } : { $recent_annc_array[$i].preview } | Learn more...</p></div></a>
-		{ /for }
-		</ul>
-		<p><a href="{ $smf_index }/board,{ $smf_announcements_board }.0.html" class="morelink">More Announcements...</a></p>
-	</div>
-	<div class="tipofday">
-		{ $tip_of_the_day }
-	</div>
+		<div class="recent_annc">
+			<h2>Recent Announcements</h2>
+			<ul>
+			{ for start=0 stop=4 step=1 value=i }
+				<a href="{ $recent_annc_array[$i].href }"><div><h3>{ $recent_annc_array[$i].subject }</h3>
+				<p class="indent">{ $recent_annc_array[$i].time } : { $recent_annc_array[$i].preview } | Learn more...</p></div></a>
+			{ /for }
+			</ul>
+			<p><a href="{ $smf_index }/board,{ $smf_announcements_board }.0.html" class="morelink">More Announcements...</a></p>
+		</div>
+
+		<div class="tipofdayouter">
+			<div class="tipofday">
+				{ $tip_of_the_day }
+			</div>
+			<div class="clear" style="height:1px;"></div>
+		</div>
 	</div>
 	
 	<div class="recent_posts">
