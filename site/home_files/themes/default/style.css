@@ -468,6 +468,14 @@ color:#000;
 overflow:auto;
 }
 
+.tipofdaytext {
+padding-right:15px;
+float: left;
+}
+
+.tipofday div {
+float: left;
+}
 
 .tipofday h1 {
 font-size:1.5em;
