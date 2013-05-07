@@ -83,21 +83,21 @@
 		<div class="column_wrap33"><div class="columnn_inner hblock">
 			<h2>What is Lazarus?</h2>
 			<p class="para">Lazarus is a Delphi compatible cross-platform IDE for Rapid Application Development. It has variety of components ready for use and a graphical form designer to easily create complex graphical user interfaces.</p>
-			<p><span><a href="{ $home_php_name }?page=about" class="btlink">Learn more...</a></span>
+			<p class="hblockmore"><span><a href="{ $home_php_name }?page=about" class="btlink">Learn more...</a></span>
 			<span><a href="http://en.wikipedia.org/wiki/Lazarus_%28IDE%29">Wikipedia</a></span></p>
 		</div></div>
 	
 		<div class="column_wrap33"><div class="columnn_inner hblock">
 			<h2>What can it do?</h2>
 			<p class="para">You can create your own file browsers, image viewers, web browsers, database applications, calculation programs, graphics editing software, games, 3D software, medical analysis software and what not.</p>
-			<p><span><a href="http://wiki.freepascal.org/Lazarus_Application_Gallery" class="btlink">See Application Gallery</a></span><span><a href="{ $home_php_name }?page=whyuse">Why use it?</a></span></p>
+			<p class="hblockmore"><span><a href="http://wiki.freepascal.org/Lazarus_Application_Gallery" class="btlink">See Application Gallery</a></span><span><a href="{ $home_php_name }?page=whyuse">Why use it?</a></span></p>
 		</div></div>
 	
 		<div class="column_wrap33"><div class="columnn_inner hblock">
 			<h2>Where to learn?</h2>
 			<p class="para">Lazarus is chosen by programers from computer science students to hobbyists to experts. No matter what you want to do, Lazarus helps you to make your concepts to a reality. So take a dive...
 			</p>
-			<p><span><a href="http://wiki.freepascal.org/Lazarus_Tutorial" class="btlink">Start Learning</a></span>
+			<p class="hblockmore"><span><a href="http://wiki.freepascal.org/Lazarus_Tutorial" class="btlink">Start Learning</a></span>
 			<span><a href="http://wiki.freepascal.org/Pascal_and_Lazarus_Books_and_Magazines">Books</a> | <a href="http://wiki.freepascal.org/Lazarus_Documentation#Lazarus_and_Pascal_Tutorials">Online Tutorials</a></span></p>
 		</div></div>
 		<div class="clear"></div>
@@ -110,7 +110,7 @@
 	<div class="table_wrap"><div style="width:100%;">
 	<div class="column_wrap66"><div class="columnn_inner">
 		<div class="contentsection">
-			<div class="recent_annc">
+			<div class="contentfeed">
 				<h2>Recent Announcements</h2>
 				<ul>
 				{ for start=0 stop=4 step=1 value=i }
@@ -121,6 +121,7 @@
 				<p><a href="{ $smf_index }/board,{ $smf_announcements_board }.0.html" class="morelink">More Announcements...</a></p>
 			</div>
 		</div>
+
 
 
 		<div class="contentsection">
@@ -176,15 +177,17 @@
 
 
 		<div class="contentsection">
-			<div class="recent_posts" >
+			<div class="contentfeed" >
 				<h2>Recent Forum Posts</h2>
-				<ul>
-				{ for start=0 stop=10 step=1 value=i }
-					<li><a href="{ $recent_posts_array[$i].href }" title="{ $recent_posts_array[$i].subject }"><div {if $recent_posts_array[$i].new eq "True"}class="new"{/if}><strong>{ $recent_posts_array[$i].short_subject }</strong><br /><span>by { $recent_posts_array[$i].poster.name } ({ $recent_posts_array[$i].time })</span>
-					</div></a>
-					</li>
-				{ /for }
-				</ul>
+				<div class="contentfeed_small" >
+					<ul>
+					{ for start=0 stop=10 step=1 value=i }
+						<li><a href="{ $recent_posts_array[$i].href }" title="{ $recent_posts_array[$i].subject }"><div {if $recent_posts_array[$i].new eq "True"}class="new"{/if}><strong>{ $recent_posts_array[$i].short_subject }</strong><br /><span>by { $recent_posts_array[$i].poster.name } ({ $recent_posts_array[$i].time })</span>
+						</div></a>
+						</li>
+					{ /for }
+					</ul>
+				</div>
 				<a href="{ $smf_home }" class="morelink">See all posts...</a>
 			</div>
 		</div>

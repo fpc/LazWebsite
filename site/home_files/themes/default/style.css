@@ -262,18 +262,22 @@ font-size:1.1em;
 margin-right:15px;
 }
 
-.recent_annc {
+
+
+
+
+.contentfeed {
 color:#000;
 display:block;
 font-size:1.1em;
 border:1px SOLID #ccc;
 }
 
-.recent_annc ul {
+.contentfeed ul {
 padding:5px 10px;
 }
 
-.recent_annc h2 {
+.contentfeed h2 {
 margin:0px;
 color:#92278F;
 padding:3px 10px;
@@ -283,31 +287,31 @@ font-weight:normal;
 border-bottom:1px solid #ccc;
 }
 
-.recent_annc h3 {
+.contentfeed h3 {
 margin:8px 0 5px 0;
 color:#003482;
 font-size:1.6em;
 }
 
-.recent_annc a {
+.contentfeed a {
 color:#000;
 text-decoration:none;
 }
 
-.recent_annc a div {
+.contentfeed a div {
 padding:0 5px 0 5px;
 }
 
-.recent_annc a:hover div {
+.contentfeed a:hover div {
 background-color:#eee;
 }
 
-.recent_annc p.indent {
+.contentfeed p.indent {
 margin-left:20px;
 font-size:1.3em;
 }
 
-.recent_annc a.morelink {
+.contentfeed a.morelink {
 display:block;
 text-align:center;
 padding:5px;
@@ -315,71 +319,47 @@ margin-top:5px;
 border-top:1px SOLID #ccc;
 }
 
-.recent_annc a.morelink:hover {
+.contentfeed a.morelink:hover {
 background:#eee;
 border-top:1px SOLID #BD8CBF;
 }
 
-.recent_posts {
-padding:10px;
-color:#000;
-display:block;
-/*height:395px;*/
-border:1px solid #ccc;
-font-size:1.1em;
-}
 
-.recent_posts h2 {
-margin:0px;
-color:#92278F;
-margin-bottom:5px;
-border-bottom:1px solid #ccc;
-}
 
-.recent_posts li {
+.contentfeed_small li {
 list-style:none;
 margin-left:0px;
 font-size:1.2em;
 color:#000;
 }
 
-.recent_posts li a div {
+.contentfeed_small li a div {
 color:#000;
 padding:2px 3px 2px 12px;
 text-indent:-9px;
 line-height:1.3em;
 }
 
-.recent_posts li span {
+.contentfeed_small li span {
 color:#818181;
 }
 
-.recent_posts li a {
+.contentfeed_small li a {
 text-decoration:none;
 }
 
 /* style for new items in the recent posts */
-.recent_posts div.new {
+.contentfeed_small div.new {
 /*border:1px SOLID #81237E;*/
 }
 
-.recent_posts li a:hover div {
+.contentfeed_small li a:hover div {
 background-color:#eee;
 }
 
-.recent_posts a.morelink {
-display:block;
-text-align:center;
-color:#92278F;
-border-top:1px SOLID #ccc;
-padding:2px;
-font-size:1.2em;
-}
 
-.recent_posts a.morelink:hover {
-background:#eee;
-border:1px SOLID #92278F;
-}
+
+
 
 .tipofdayouter {
 display:block;
