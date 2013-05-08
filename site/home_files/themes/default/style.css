@@ -207,13 +207,7 @@ background:#E1F2FC;
 
 
 .hfeatures {
-background:#92278F;
 padding:10px 10px 5px 15px;
-color:#fff;
-/* Inner shadow */
--moz-box-shadow:0 0 30px rgba(0, 0, 0, 0.3) inset;
--webkit-box-shadow:0 0 30px rgba(0, 0, 0, 0.3) inset;
-box-shadow:0 0 30px rgba(0, 0, 0, 0.3) inset;
 }
 
 .hfeatures h1 {
