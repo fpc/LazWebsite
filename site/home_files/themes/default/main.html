@@ -110,14 +110,14 @@
 	<div class="table_wrap"><div style="width:100%;">
 	<div class="column_wrap66"><div class="columnn_inner">
 		<div class="contentsection">
-			<div class="contentfeed">
-				<h2>Recent Announcements</h2>
-				<ul>
-				{ for start=0 stop=4 step=1 value=i }
-					<a href="{ $recent_annc_array[$i].href }"><div><h3>{ $recent_annc_array[$i].subject }</h3>
-					<p class="indent">{ $recent_annc_array[$i].time } : { $recent_annc_array[$i].preview } | Learn more...</p></div></a>
-				{ /for }
-				</ul>
+			<div class="contentbox">
+				<h2 class="contentbox_h2">Recent Announcements</h2>
+				<div class="contentbox_white contentfeed">
+					{ for start=0 stop=4 step=1 value=i }
+						<a href="{ $recent_annc_array[$i].href }"><div><h3>{ $recent_annc_array[$i].subject }</h3>
+						<p class="indent">{ $recent_annc_array[$i].time } : { $recent_annc_array[$i].preview } | Learn more...</p></div></a>
+					{ /for }
+				</div>
 				<p class="small"><a href="{ $smf_index }/board,{ $smf_announcements_board }.0.html" class="morelink">More Announcements...</a></p>
 			</div>
 		</div>
@@ -126,6 +126,7 @@
 
 		<div class="contentsection">
 			<a href="{ $rand_proj_link }" style="text-decoration:none">
+			<div class="contentbox contentbox_grey">
 			<div class="randproj">
 				<div style="width:100%;">
 					<div class="randproj_note">
@@ -138,17 +139,21 @@
 				</div>
 				<div class="clear"></div>
 			</div>
+			</div>
 			<div class="clear"></div>
 			</a>
 		</div>
 
 
 		<div class="contentsection">
-			<div class="tipofdayouter">
+			<div class="contentbox">
+				<div class="contentbox_grey">
 				<div class="tipofday">
 					{ $tip_of_the_day }
+				<div class="clear"></div>
 				</div>
-				<div class="clear" style="height:1px;"></div>
+				<div class="clear"></div>
+				</div>
 			</div>
 		</div>
 
@@ -157,9 +162,9 @@
 	<div class="column_wrap33"><div class="columnn_inner">
 
 		<div class="contentsection">
-			<div class="contentfeed" >
-					<h2>Features</h2>
-					<div class="hfeatures" >
+			<div class="contentbox" >
+					<h2 class="contentbox_h2">Features</h2>
+					<div class="contentbox_white hfeatures" >
 						<ul>
 						<li>Regular Releases</li>
 						<li>Cross-platform</li>
@@ -177,9 +182,9 @@
 
 
 		<div class="contentsection">
-			<div class="contentfeed" >
-				<h2>Recent Forum Posts</h2>
-				<div class="contentfeed_small" >
+			<div class="contentbox" >
+				<h2 class="contentbox_h2">Recent Forum Posts</h2>
+				<div class="contentbox_white contentfeed_small" >
 					<ul>
 					{ for start=0 stop=10 step=1 value=i }
 						<li><a href="{ $recent_posts_array[$i].href }" title="{ $recent_posts_array[$i].subject }"><div {if $recent_posts_array[$i].new eq "True"}class="new"{/if}><strong>{ $recent_posts_array[$i].short_subject }</strong><br /><span>by { $recent_posts_array[$i].poster.name } ({ $recent_posts_array[$i].time })</span>
