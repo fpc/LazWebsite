@@ -196,14 +196,20 @@
 		<div class="contentsection">
 			<div class="contentbox" >
 				<h2 class="contentbox_h2">Recent Forum Posts</h2>
-				<div class="contentbox_white contentfeed_small" >
-					<ul>
+				<div class="contentbox_white" >
 					{ for start=0 stop=10 step=1 value=i }
-						<li><a href="{ $recent_posts_array[$i].href }" title="{ $recent_posts_array[$i].subject }"><div {if $recent_posts_array[$i].new eq "True"}class="new"{/if}><strong>{ $recent_posts_array[$i].short_subject }</strong><br /><span>by { $recent_posts_array[$i].poster.name } ({ $recent_posts_array[$i].time })</span>
-						</div></a>
-						</li>
+					<div class="contentfeed_small_item"><a href="{ $recent_posts_array[$i].href }" title="{ $recent_posts_array[$i].subject }">
+						<div>
+						<p {if $recent_posts_array[$i].new eq "True"}class="new"{/if}>
+							<strong>{ $recent_posts_array[$i].short_subject }</strong><br />
+						</p>
+						<p class="contentfeed_small_light small">
+							<span>by { $recent_posts_array[$i].poster.name }</span>
+							<span>({ $recent_posts_array[$i].time })</span>
+						</p>
+						</div>
+					</a></div>
 					{ /for }
-					</ul>
 				</div>
 				<p  class="contentboxmore small"><a href="{ $smf_home }" >See all posts...</a></p>
 			</div>
