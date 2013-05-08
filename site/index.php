@@ -130,7 +130,10 @@ if ($url_page == '') {
 	$lines = file($info_file);
 	$my_line = mt_rand(0, count($lines)-1);
 
-	$tpl->assign("tip_of_the_day",$lines[$my_line]);
+	$info = explode('|', $lines[$my_line]);
+
+	$tpl->assign("tip_of_the_day_desc",$info[0]);
+	$tpl->assign("tip_of_the_day_img",$info[1]);
 	//-------------------- Tip of the day end ///
 	
 	//---------------- Platform Detection 
@@ -244,6 +247,7 @@ if ($url_page == '') {
 	//---------------- Platform detection ///
 
 } else {
+
 
 	// General Info
 	$tpl->assign("page_title",'Lazarus');

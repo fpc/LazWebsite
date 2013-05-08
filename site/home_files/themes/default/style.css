@@ -337,52 +337,28 @@ background:url('images/home_feature_bullet.gif') left top no-repeat;
 .randproj {
 color: #000;
 }
-
 .randproj img {
 float:left;
+padding-right:20px;
 }
 .randproj h2 {
 margin:0px 0 5px 0;
 }
 .randproj_text {
-float:left;
-max-width:200px;
-padding-left:20px;
 font-size:1.3em;
 }
 .randproj_note {
-float:left;
-width: 32%;
 }
 .randproj_note p {
-max-width:170px;
 font-size:1.3em;
-margin-right:15px;
 }
-
-
 
 
 .tipofday {
-width:100%;
 min-height:50px;
 }
-
 .tipofday h2 {
 margin:0px 0 5px 0;
-}
-
-.tipofdayspacer {
-float: left;
-width:2%;
-}
-
-.tipofdaytext {
-float: left;
-}
-
-.tipofday div {
-float: left;
 }
 
 .tipofday p {
