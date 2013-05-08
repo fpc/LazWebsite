@@ -103,6 +103,7 @@ if ($url_page == '') {
 			$posts[$i]['short_subject'] = 'Dummy post '.($i+1);
 			$posts[$i]['href'] = $smf_home;
 			$posts[$i]['time'] = date("F d, Y, h:i:s A");
+			$posts[$i]['poster'] ['name'] = "some one unknown";
 			$posts[$i]['preview'] = 'This is some dummy announcement text. This just because you do not have a SMF installation...';
 		
 		}
