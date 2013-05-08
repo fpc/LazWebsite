@@ -53,8 +53,7 @@ height: 0px;
 }
 
 .pagewrap {
-min-width:980px;
-width:90%;
+width:980px;
 border-left:4px solid #BBB;
 border-right:4px solid #BBB;
 margin: 0 auto;
