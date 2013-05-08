@@ -162,10 +162,12 @@ color:#003471;
 border:1px SOLID #ECC6EE;
 border-radius:5px;
 font-size:1.1em;
+text-decoration:none;
 }
 a.btlink:hover {
 background:#F6E4F7;
 color:#020A72;
+text-decoration:underline;
 }
 
 
