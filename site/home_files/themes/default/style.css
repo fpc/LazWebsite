@@ -396,31 +396,17 @@ min-height: 500px;
 
 /*Features*/
 .fblock {
-display:block;
-margin:20px 30px;
 min-height:300px;
-width:240px;
-float:left;
 }
 
 .fblock li {
 margin-bottom:5px;
 }
 
-.fblock ul ul li {
-margin-left:38px;
-}
-
-.fblock h1 {
-/*border:none;*/
-font-weight:normal;
-font-size:3.6em;
-text-indent:-2px;
-}
-
 .fblock h2 {
 margin-bottom:15px;
 }
+
 
 /* FORM ELEMENTS */
 input[type=submit], input[type=reset] {
