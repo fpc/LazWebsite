@@ -16,6 +16,8 @@ body {
 p {
 line-height:1.5em;
 font-size:1.5em;
+margin-top:5px;
+margin-bottom:10px;
 }
 
 .small {
@@ -100,11 +102,13 @@ float:left;
 .columnn_inner {
 padding-left:12px;
 padding-right:13px;
+display:block;
 }
 
 .columnn_inner_w { /* extra Width */
 padding-left:20px;
 padding-right:20px;
+display:block;
 }
 
 .title {
@@ -116,9 +120,7 @@ line-height:1em;
 }
 
 .contentwrap h1 {
-/*font-size:2.64em;*/
 color:#92278F;
-/* border-bottom:5px SOLID #92278F; */
 margin-bottom:10px;
 font-weight:normal;
 }
@@ -133,16 +135,20 @@ color:#003471;
 font-size:1.6em;
 }
 
+.contentwrap li {
+font-size:1.5em;
+}
 
 
-.hblock {
-display:block;
+
+.content_more {
+/* margin-top:10px; */
 }
-.hblock p {
-margin-bottom:12px;
+.content_more a, .content_more a:visited {
+text-decoration:none;
 }
-.hblock p.para {
-min-height:100px;
+.content_more a:hover {
+text-decoration:underline;
 }
 
 
@@ -157,20 +163,12 @@ border:1px SOLID #ECC6EE;
 border-radius:5px;
 font-size:1.1em;
 }
-
 a.btlink:hover {
 background:#F6E4F7;
 color:#020A72;
 }
 
 
-.hblock a, .hblock a:visited {
-text-decoration:none;
-}
-
-.hblock a:hover {
-text-decoration:underline;
-}
 
 .hblock2 {
 width:100%;
@@ -205,47 +203,6 @@ background:#E1F2FC;
 
 
 
-
-
-.hfeatures {
-padding:10px 10px 5px 15px;
-}
-
-.hfeatures li {
-margin-left:-5px;
-list-style:none;
-line-height:1.5em;
-padding-left:1.4em;
-background:url('images/home_feature_bullet.gif') left top no-repeat;
-}
-
-
-
-.randproj {}
-
-.randproj img {
-float:left;
-}
-.randproj h2 {
-margin:0px 0 5px 0;
-}
-.randproj_text {
-float:left;
-max-width:200px;
-padding-left:20px;
-font-size:1.1em;
-}
-.randproj_note {
-float:left;
-}
-.randproj_note p {
-max-width:170px;
-font-size:1.1em;
-margin-right:15px;
-}
-
-
-
 .contentbox {
 display:block;
 padding: 0px;
@@ -267,17 +224,6 @@ font-weight:normal;
 color:#000;
 text-decoration:none;
 }
-.contentbox a.morelink {
-display:block;
-text-align:center;
-padding:5px;
-margin-top:5px;
-border-top:1px SOLID #ccc;
-}
-.contentbox a.morelink:hover {
-background:#eee;
-border-top:1px SOLID #BD8CBF;
-}
 
 .contentbox_white { /* used in contentbox*/
 display:block;
@@ -290,42 +236,52 @@ padding:10px 15px;
 background:#eee;
 }
 
+.contentboxmore {
+margin-top:0px;
+margin-bottom:0px;
+}
+
+.contentboxmore a {
+display:block;
+text-align:center;
+padding:5px;
+margin-top:5px;
+border-top:1px SOLID #ccc;
+}
+.contentboxmore a:hover {
+background:#eee;
+border-top:1px SOLID #BD8CBF;
+}
+
+
 
 
 .contentfeed {
 color:#000;
 display:block;
-font-size:1.1em;
 }
-
-.contentfeed ul {
-padding:0px;
+.contentfeed h2 {
+margin-top:0px;
 }
-
-.contentfeed h3 {
-margin:8px 0 5px 0;
-color:#003482;
-font-size:1.6em;
-}
-
-.contentfeed p.indent {
+.contentfeed .indent {
 margin-left:20px;
-font-size:1.3em;
 }
-
 .contentfeed a {
 color:#000;
 text-decoration:none;
 }
-
-.contentfeed a div {
+.contentfeed_item {
 padding:0 5px 0 5px;
+margin-bottom:10px;
 }
-
-.contentfeed a:hover div {
+.contentfeed_more {
+float:right;
+vertical-align:text-bottom;
+line-height:1.5em;
+}
+.contentfeed a:hover div.contentfeed_item {
 background-color:#eee;
 }
-
 
 
 
@@ -369,16 +325,43 @@ background-color:#eee;
 
 
 
-
-.tipofdayouter {
-/*display:block;
-margin-top:15px;
-background-color:#EEE;
-border:1px solid #ccc;
-color:#000;
-overflow:hide;
-padding:10px; */
+.hfeatures li {
+margin-left:0px;
+list-style:none;
+padding-left:1.4em;
+background:url('images/home_feature_bullet.gif') left top no-repeat;
 }
+
+
+
+.randproj {
+color: #000;
+}
+
+.randproj img {
+float:left;
+}
+.randproj h2 {
+margin:0px 0 5px 0;
+}
+.randproj_text {
+float:left;
+max-width:200px;
+padding-left:20px;
+font-size:1.3em;
+}
+.randproj_note {
+float:left;
+width: 32%;
+}
+.randproj_note p {
+max-width:170px;
+font-size:1.3em;
+margin-right:15px;
+}
+
+
+
 
 .tipofday {
 width:100%;
@@ -402,15 +385,13 @@ float: left;
 float: left;
 }
 
-.tipofday h1 {
-font-size:1.5em;
-}
 .tipofday p {
 font-size:1.3em;
 }
 .tipofday img {
 max-height:200px;
 }
+
 
 .footer {
 padding: 10px 40px 5px;
@@ -432,19 +413,6 @@ float:right;
 
 .page {
 min-height: 500px;
-}
-
-.page li {
-font-size:1.5em;
-}
-
-.page p {
-margin-top:5px;
-margin-bottom:10px;
-/*
-line-height:1.5em;
-font-size:1.5em;
-*/
 }
 
 /*Features*/
