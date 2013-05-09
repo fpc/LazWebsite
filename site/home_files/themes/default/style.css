@@ -395,8 +395,16 @@ min-height: 500px;
 }
 
 /*Features*/
-.fblock {
-min-height:300px;
+.long_borders {
+padding-bottom: 900px;
+margin-bottom: -900px;
+border-bottom:0px;
+}
+
+.end_borders {
+margin-top: -20px;
+height: 21px;
+border-top:0px;
 }
 
 .fblock li {
