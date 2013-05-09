@@ -130,26 +130,32 @@
 
 
 		<div class="contentsection">
-			<a href="{ $rand_proj_link }" style="text-decoration:none">
 			<div class="contentbox contentbox_grey randproj">
 				<div class="table_wrap"><div style="width:100%;">
 					<div class="column_wrap33"><div class="columnn_inner">
 						<div class="randproj_note">
 							<h2>Random Project</h2>
-							<p>from our showcase.<br />This is an example of what can be done with Lazarus</p>
+							<p  class="content_more">from our 
+							<a href="http://wiki.freepascal.org/Lazarus_Application_Gallery">showcase</a>
+							.<br />
+							This is an example of what can be done with Lazarus</p>
 						</div>
 					</div></div>
 					<div class="column_wrap66"><div class="columnn_inner">
 						<p class="randproj_text">
 							<img src="home_files/randproj/{ $rand_proj_img }" alt="{ $rand_proj_title }" title="{ $rand_proj_title }" height="70" />
-						{ $rand_proj_desc }</p>
+							{ $rand_proj_desc }
+
+							<span class="content_more" style="float:right;margin-left:10px;" >
+							<a href="{ $rand_proj_link }" >Visit project homepage</a>
+							</span>
+						</p>
 					</div></div>
 					<div class="clear"></div>
 				</div><div class="clear"></div>
 				</div>
 			</div>
 			<div class="clear"></div>
-			</a>
 		</div>
 
 
