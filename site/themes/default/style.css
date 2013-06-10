@@ -429,6 +429,7 @@ float:left;
 }
 
 .top_links {
+float: right;
 padding:28px 40px 0 0;
 font-size:1.4em;
 text-transform:uppercase;
