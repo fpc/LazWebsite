@@ -60,18 +60,18 @@ Prerequisite:
 $cms_root_path = (defined('ABSPATH')) ? ABSPATH : './';
 
 	// common constants for integer values (or any other type of value ;) )
-	include $cms_root_path . 'home_files/include/constants.php';
+	include $cms_root_path . 'include/constants.php';
 
 	// common functions that almost every page needs
-	include $cms_root_path . 'home_files/include/functions.php';
+	include $cms_root_path . 'include/functions.php';
 
 // usage:
 // $mypath = CMS_ROOT . $cms_theme_path;
 // $mypath = $rootdir . "/" . $cms_theme_path;
-	$cms_theme_path = "home_files/themes/" . $cms_theme_dir . "/";
-	include ABSPATH . "home_files/themes/" . $cms_theme_dir . "/theme_functions.php";
+	$cms_theme_path = "themes/" . $cms_theme_dir . "/";
+	include ABSPATH . "themes/" . $cms_theme_dir . "/theme_functions.php";
 
-require(ABSPATH . "home_files/include/template_lite/class.template.php");
+require(ABSPATH . "include/template_lite/class.template.php");
 $tpl = new Template_Lite;
 $tpl->force_compile = true;
 $tpl->compile_check = true;
@@ -80,7 +80,7 @@ $tpl->cache_lifetime = 3600;
 $tpl->config_overwrite = false;
 
 // chmod 700 the dir
-$tpl->compile_dir = ABSPATH . "home_files/include/cache/";
+$tpl->compile_dir = ABSPATH . "include/cache/";
 $tpl->template_dir = ABSPATH . $cms_theme_path ;
 
 $tpl->assign("page_author", WEBSITE_AUTHOR);
@@ -88,6 +88,6 @@ $tpl->assign("theme_path", $cms_theme_path);
 $tpl->assign("website_domain", $website_domain);
 
 
-include_once(ABSPATH . "home_files/include/constants.php");
+include_once(ABSPATH . "include/constants.php");
 
 ?>

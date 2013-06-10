@@ -71,7 +71,7 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(dirname(dirname(__FILE__))) . '/');
 
 // Which theme do we want to use?
-// theme directory is located on home_files/themes
+// theme directory is located on themes
 $cms_theme_dir = "default";
 
 // Get the website domain

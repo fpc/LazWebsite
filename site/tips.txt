@@ -1,6 +1,6 @@
-Install the <strong>editor tool bar</strong> to get quick and easy access to your favourite features|home_files/images/ide_features_editor_toolbar.png
-Use <strong>syncro-edit</strong> to update all occurrences of an identifier in a selected part of the source|home_files/images/syneditsyncro.gif
-The form designer can display <strong>guide lines</strong> to help you layout your components.<br />There are also tools to align many components at once. And anchoring can be used for dynamic layout|home_files/images/ide_features_design_guidelines.gif
-Use the <strong>code macro "OfAll"</strong> and let the IDE write your case statements for enum values|home_files/images/code_macro_of_all.gif
-Use the <strong>leak viewer</strong> to find and fix memory leaks. Hint: You need to enable Heaptrc in the project options|home_files/images/leak_view.png
-Install the <strong>anchor docking</strong> package to follow the development of a dockable layout for the IDE.<br />Note: This is still in <u>beta</u> state|home_files/images/docked_ide.png
+Install the <strong>editor tool bar</strong> to get quick and easy access to your favourite features|images/ide_features_editor_toolbar.png
+Use <strong>syncro-edit</strong> to update all occurrences of an identifier in a selected part of the source|images/syneditsyncro.gif
+The form designer can display <strong>guide lines</strong> to help you layout your components.<br />There are also tools to align many components at once. And anchoring can be used for dynamic layout|images/ide_features_design_guidelines.gif
+Use the <strong>code macro "OfAll"</strong> and let the IDE write your case statements for enum values|images/code_macro_of_all.gif
+Use the <strong>leak viewer</strong> to find and fix memory leaks. Hint: You need to enable Heaptrc in the project options|images/leak_view.png
+Install the <strong>anchor docking</strong> package to follow the development of a dockable layout for the IDE.<br />Note: This is still in <u>beta</u> state|images/docked_ide.png

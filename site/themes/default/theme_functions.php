@@ -8,7 +8,7 @@
 function insert_randproj($params, &$tpl) {
 global $cms_theme_path, $tpl;
 
-$info_file = str_replace('\\', '/', ABSPATH . 'home_files/themes/default/randproj/info.txt');
+$info_file = str_replace('\\', '/', ABSPATH . 'themes/default/randproj/info.txt');
 $lines = file($info_file);
 $my_line = mt_rand(0, count($lines)-1);
 
