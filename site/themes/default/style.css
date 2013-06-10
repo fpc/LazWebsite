@@ -418,6 +418,8 @@ display:block;
 min-height:70px;
 text-align:right;
 background:url(images/topbar_bg_tile.gif);
+background-size:100% 100%;
+background-repeat:no-repeat;
 margin-bottom:30px;
 }
 
@@ -426,6 +428,7 @@ display:block;
 width:320px;
 min-height:70px;
 background:url(images/top_logo_bg.png);
+background-repeat:no-repeat;
 float:left;
 }
 
@@ -452,6 +455,8 @@ border-bottom:5px SOLID #FFE4FE;
 
 .slidewrap {
 background:url(images/slider_bg.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
 display:block;
 min-height:235px;
 border-top:10px SOLID #92278F;
