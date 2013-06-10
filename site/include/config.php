@@ -68,7 +68,7 @@ $smf_ssi = 'forum/SSI.php';
 
 // -- Absolute path to the Software directory. -- //
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(dirname(dirname(__FILE__))) . '/');
+	define('ABSPATH', dirname(dirname(__FILE__)) . '/');
 
 // Which theme do we want to use?
 // theme directory is located on themes
