@@ -25,12 +25,12 @@ For further clarification of the license, please contact the author.
 Installation
 ---------------
 
-1. Just upload the index.php and home_files to a directory.
+1. Just upload the index.php,images,include,pages,randproj,themes,tips.txt to a directory.
 
-2. chmod 777 the directory: home_files/include/cache
+2. chmod 777 the directory: include/cache
 Or refer to Template Lite documentation that refers to cache directory.
 
-3. Edit the home_files/include/config.php to meet your needs
+3. Edit the include/config.php to meet your needs
 
 
 Contact and Assistance

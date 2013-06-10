@@ -14,14 +14,14 @@ For further clarification of the license, please contact the author.
 */
 
 // basic configuration
-include_once "./home_files/include/config.php";
+include_once "./include/config.php";
 // common codes to be included
-include_once ABSPATH . "home_files/include/common.php";
+include_once ABSPATH . "include/common.php";
 
 //------------ Get the GET variables
 $url_page = $_GET['page'];
 if ($url_page != '') {
-	if (file_exists(ABSPATH . 'home_files/pages/'.$url_page.'.html')) {
+	if (file_exists(ABSPATH . 'pages/'.$url_page.'.html')) {
 		//$url_page = $url_page;
 	} else {
 		$url_page = '';
@@ -114,7 +114,7 @@ if ($url_page == '') {
 	}
 	
 	//--------------- Random projects start
-	$info_file = str_replace('\\', '/', ABSPATH . 'home_files/randproj/info.txt');
+	$info_file = str_replace('\\', '/', ABSPATH . 'randproj/info.txt');
 	$lines = file($info_file);
 	$my_line = mt_rand(0, count($lines)-1);
 
@@ -127,7 +127,7 @@ if ($url_page == '') {
 	//------------------ Random projects end   ///
 
 	//-------------------- Tip of the day
-	$info_file = str_replace('\\', '/', ABSPATH . 'home_files/tips.txt');
+	$info_file = str_replace('\\', '/', ABSPATH . 'tips.txt');
 	$lines = file($info_file);
 	$my_line = mt_rand(0, count($lines)-1);
 
@@ -257,7 +257,7 @@ if ($url_page == '') {
 
 
 	$tpl->assign("ishome", False);
-	$tpl->assign("page_content_file", './home_files/pages/'.$url_page.'.html');
+	$tpl->assign("page_content_file", './pages/'.$url_page.'.html');
 	
 }
 	
