@@ -9,23 +9,33 @@ function e(eel) {
 	return document.getElementById(eel);
 }
 
-function ShowDlMenu() {
-var dlmnu = e("dl_menu");
+function ShowDlMenu(ev) {
+  var dlmnu = e("dl_menu");
 
- if (dlmnu.style.display != 'none') { 
- dlmnu.style.display = 'none';
- } else { 
- dlmnu.style.display = ''; 
- }
+  if (dlmnu.style.display != 'none') { 
+    dlmnu.style.display = 'none';
+    document.onclick=null;
+  } else { 
+    dlmnu.style.display = ''; 
+    document.onclick=HideDlMenu;
+  }
 
+  var event = ev || window.event;
+  event.cancelBubble=true;
+  if (event.stopPropagation){
+    event.stopPropagation();
+  }
+
+  return 1;
 }
 
 function HideDlMenu() {
-e("dl_menu").style.display = 'none';
+  e("dl_menu").style.display = 'none';
+  document.onclick=null;
 }
 
 function GetDlOSName() {
-document.write("| <a href=\"javascript:void(0)\" onclick=\"ShowDlMenu();\" onblur=\"\">Other &#x25BC;</a>");
+document.write("| <a href=\"javascript:void(0)\" onclick=\"ShowDlMenu(arguments[0]);\" onblur=\"\">Other &#x25BC;</a>");
 }
 
 
