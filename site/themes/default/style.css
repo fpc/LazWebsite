@@ -414,7 +414,7 @@ font-weight:bold;
 
 .top_bar {
 display:block;
-height:70px;
+min-height:70px;
 text-align:right;
 background:url(images/topbar_bg_tile.gif);
 margin-bottom:30px;
@@ -423,13 +423,12 @@ margin-bottom:30px;
 .top_logo {
 display:block;
 width:320px;
-height:70px;
+min-height:70px;
 background:url(images/top_logo_bg.png);
 float:left;
 }
 
 .top_links {
-float: right;
 padding:28px 40px 0 0;
 font-size:1.4em;
 text-transform:uppercase;
@@ -453,7 +452,7 @@ border-bottom:5px SOLID #FFE4FE;
 .slidewrap {
 background:url(images/slider_bg.jpg);
 display:block;
-height:235px;
+min-height:235px;
 border-top:10px SOLID #92278F;
 border-bottom:10px SOLID #92278F;
 margin-bottom:15px;
