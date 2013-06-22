@@ -13,6 +13,10 @@ The Lazarus Homepage script is created by Adnan Shameem Sunny (Email: needadnan 
 For further clarification of the license, please contact the author.
 */
 
+// -- Absolute path to the Software directory. -- //
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(dirname(__FILE__)) . '/');
+
 //---- Website basic information ----
 define("WEBSITE_NAME", 'Lazarus', true);
 define("WEBSITE_FULLNAME", 'Lazarus IDE', true);
@@ -55,20 +59,16 @@ $smf_announcements_board = 18;
 // (Maybe unncessary because SSI.php automatically detects
 // the post/thread urls containing index.php)
 // TODO: implement (if required)
-$smf_index = 'http://www.lazarus.freepascal.org/index.php';
+$smf_index = 'http://forum.lazarus.freepascal.org/index.php';
 // This is for the forum home page link
-$smf_home = 'http://www.lazarus.freepascal.org/index.php?action=forum';
+$smf_home = 'http://forum.lazarus.freepascal.org/index.php?action=forum';
 // the path for SMF's SSI.php
-$smf_ssi = 'forum/SSI.php';
+$smf_ssi = dirname(ABSPATH) . '/smf/SSI.php';
 
 // We don't need this for an international site
 // Let the server return the time as it is
 //date_default_timezone_set('Asia/Dhaka');
 
-
-// -- Absolute path to the Software directory. -- //
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(dirname(__FILE__)) . '/');
 
 // Which theme do we want to use?
 // theme directory is located on themes
