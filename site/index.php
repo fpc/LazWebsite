@@ -72,7 +72,8 @@ if ($url_page == '') {
 	// we check to see if SSI.php from SMF is available
 	if (file_exists($smf_ssi)) {
 		require($smf_ssi);
-		//ssi_recentTopics();
+		//re-set script url to the forum url
+		$scripturl = $smf_index;
 		$posts = ssi_recentPosts($num_recent = 10, $exclude_boards = null, $include_boards = null, $output_method = 'return');
 		//echo '<pre>';var_dump($posts);echo '</pre>';
 
