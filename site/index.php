@@ -82,7 +82,7 @@ if ($url_page == '') {
 		$posts = ssi_recentTopics($num_recent = 4, $exclude_boards = null, $include_boards = $smf_announcements_board, $output_method = 'return', $first_message = true);
 
 		for ($i = 0; $i <= 3; $i++) {
-            $posts[$i]['preview'] = str_replace(array('  ', '   ', '    ', '     '), ' ', $posts['preview']);
+            $posts[$i]['preview'] = str_replace(array('  ', '   ', '    ', '     '), ' ', $posts[$i]['preview']);
         }
 
 		// Assign the posts data
