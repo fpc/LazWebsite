@@ -40,8 +40,8 @@ $dl_latest_version_fpc = '2.6.2';
 // http://www.miscdebris.net/blog/2010/04/06/use-curl-to-download-a-file-from-sourceforge-mirror/
 // http://www.google.com/url?q=http%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Ffunction.curl-getinfo.php&sa=D&sntz=1&usg=AFQjCNEtR7MVQB4n7Q1b3u5iwZOFQgHyYQ
 
-local $dl_base = 'http://sourceforge.net/projects/lazarus/files/Lazarus%20'; 
-local $dl_folder = '/Lazarus%20' . $dl_latest_version_lazarus . '/';
+$dl_base = 'http://sourceforge.net/projects/lazarus/files/Lazarus%20'; 
+$dl_folder = '/Lazarus%20' . $dl_latest_version_lazarus . '/';
 
 $dl_win32_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
 $dl_win64_url	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
