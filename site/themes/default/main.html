@@ -121,9 +121,9 @@
 				<div class="contentbox_white contentfeed">
 					{ for start=0 stop=4 step=1 value=i }
 					<a href="{ $recent_annc_array[$i].href }"><div class="contentfeed_item">
-						<h2>{ $recent_annc_array[$i].subject }</h2>
+						<h2>{ $recent_annc_array[$i].subject } - { $recent_annc_array[$i].time }</h2>
 						<div class="indent">
-							<p style="display: inline;"> { $recent_annc_array[$i].time } : { $recent_annc_array[$i].preview } </p>
+							<p style="display: inline;"> { $recent_annc_array[$i].preview } </p>
 							<span class="small contentfeed_more" > Learn more...</span>
 </div>
 					</div></a>
