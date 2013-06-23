@@ -80,8 +80,11 @@ if ($url_page == '') {
 		$tpl->assign("recent_posts_array",$posts);
 
 		$posts = ssi_recentTopics($num_recent = 4, $exclude_boards = null, $include_boards = $smf_announcements_board, $output_method = 'return', $first_message = true);
-		$posts['preview'] = str_replace(array('  ', '   ', '    ', '     '), ' ', $posts['preview']);
-        
+
+		for ($i = 0; $i <= 3; $i++) {
+            $posts[$i]['preview'] = str_replace(array('  ', '   ', '    ', '     '), ' ', $posts['preview']);
+        }
+
 		// Assign the posts data
 		$tpl->assign("recent_annc_array",$posts);
 
@@ -100,7 +103,7 @@ if ($url_page == '') {
 		// set the recent announcements dummy text array
 		$tpl->assign("recent_annc_array",$posts);
 
-		for ($i = 0; $i <= 9; $i++) {
+		for ($i = 0; $i <= 3; $i++) {
 			$posts[$i]['subject'] = 'Dummy post '.($i+1);
 			$posts[$i]['short_subject'] = 'Dummy post '.($i+1);
 			$posts[$i]['href'] = $smf_home;
