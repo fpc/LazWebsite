@@ -80,7 +80,8 @@ if ($url_page == '') {
 		$tpl->assign("recent_posts_array",$posts);
 
 		$posts = ssi_recentTopics($num_recent = 4, $exclude_boards = null, $include_boards = $smf_announcements_board, $output_method = 'return', $first_message = true);
-		
+		$posts['preview'] = str_replace('  ', ' ', $posts['preview']);
+        
 		// Assign the posts data
 		$tpl->assign("recent_annc_array",$posts);
 
