@@ -174,7 +174,7 @@ if ($url_page == '') {
 	
 	//---- OS name detection
 	$ua_osfamily = 'Unknown OS';
-	$quick_download_link = 'home.php?page=download';
+	$quick_download_link = $home_php_name . '?page=download';
 	
 	
 	if (stripos($useragent, 'Win') !== false) {
