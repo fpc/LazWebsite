@@ -414,6 +414,12 @@ font-weight:bold;
 
 /*top banner*/
 
+.top_sep {
+display:block;
+height:30px;
+background-color:#ffffff;
+clear:both;
+}
 .top_bar {
 display:block;
 min-height:70px;
@@ -421,7 +427,8 @@ text-align:right;
 background:url(images/topbar_bg_tile.gif);
 background-size:100% 100%;
 background-repeat:repeat-x;
-margin-bottom:30px;
+background-color:#b868cc;
+overflow-y:hidden;
 }
 
 .top_logo {
