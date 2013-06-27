@@ -420,7 +420,7 @@ min-height:70px;
 text-align:right;
 background:url(images/topbar_bg_tile.gif);
 background-size:100% 100%;
-background-repeat:no-repeat;
+background-repeat:repeat-x;
 margin-bottom:30px;
 }
 
@@ -510,10 +510,6 @@ color:transparent !important;
 color:#fff;
 }
 
-.dl_menu2 {
-position:relative;
-max-width:350px;
-}
 .dl_menu {
 position:absolute;
 right:50px;
