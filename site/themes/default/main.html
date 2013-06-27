@@ -44,7 +44,11 @@
 {if $ishome eq "True"}
 
   <div class="slidewrap">
-	<div class="left_shot"><a href="http://wiki.lazarus.freepascal.org/Screenshots"><img src="{ $theme_path }images/homeshot_1.gif" alt="Lazarus Screenshot" title="Lazarus IDE" /></a></div>
+	<div class="left_shot">
+		<a href="http://wiki.lazarus.freepascal.org/Screenshots">
+			<img src="{ $theme_path }images/homeshot_1.gif" alt="Lazarus Screenshot" title="Lazarus IDE" />
+		</a>
+	</div>
 	<div class="slider_r">
 		<h1>Lazarus</h1>
 		<h2>The professional Free Pascal RAD IDE</h2>
@@ -56,7 +60,10 @@
 		</ul>
 		<!--<p><a href="{ $home_php_name }?page=downloads" id="dl_btn" class="download_btn">Download</a></p>-->
 		<p><a href="{ $platform_download_link }" id="dl_btn" class="download__btn"><img src="{ $theme_path }images/download_btn.gif" /></a></p>
-		<p class="small">{ $platform_download_for } <script>GetDlOSName();</script><noscript>| <a href="{ $home_php_name }?page=downloads">Other?</a></noscript></p>
+		<p class="small">{ $platform_download_for } 
+			<script>GetDlOSName();</script>
+			<noscript>| <a href="{ $home_php_name }?page=downloads">Other?</a></noscript>
+		</p>
 		<div id="dl_menu" class="dl_menu" style="display:none;">
 			<ul>
 				<li><a href="{ $dl_win32_url }">Windows 32 Bits</a></li>

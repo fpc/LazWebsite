@@ -471,8 +471,7 @@ margin:20px 0 0 40px;
 }
 
 .slider_r {
-float:right;
-width:360px;
+position:relative;
 padding:15px 50px 0 0;
 text-align:right;
 color:#fff;
@@ -490,7 +489,6 @@ margin-bottom:10px;
 }
 
 .slider_r ul.right {
-
 margin-bottom:10px;
 }
 
@@ -512,9 +510,14 @@ color:transparent !important;
 color:#fff;
 }
 
+.dl_menu2 {
+position:relative;
+max-width:350px;
+}
 .dl_menu {
 position:absolute;
-margin-left:170px;
+right:50px;
+max-width:350px;
 background-color:#136BB8;
 padding:5px;
 color:#fff;
