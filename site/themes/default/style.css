@@ -431,17 +431,22 @@ background-color:#b868cc;
 overflow-y:hidden;
 }
 
+.top_logo_bg {
+display:block;
+width:100%;
+background:url(images/top_logo_bg.png);
+background-repeat:no-repeat;
+}
+
 .top_logo {
 display:block;
 width:320px;
 min-height:70px;
-background:url(images/top_logo_bg.png);
-background-repeat:no-repeat;
 float:left;
 }
 
 .top_links {
-padding:28px 40px 15px 0;
+padding:28px 40px 15px 300px;
 font-size:1.4em;
 text-transform:uppercase;
 }
