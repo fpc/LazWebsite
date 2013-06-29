@@ -443,6 +443,11 @@ display:block;
 width:320px;
 min-height:70px;
 float:left;
+font-weight:normal;
+font-size:4.8em;
+color:#FFFFFF;
+line-height:1em;
+text-align:left;
 }
 
 .top_links {
@@ -451,7 +456,7 @@ font-size:1.4em;
 text-transform:uppercase;
 }
 
-.top_links a, .top_links a:visited {
+.top_links a, .top_links a:visited, .top_logo a, .top_logo a:visited {
 color:#FFF;
 font-size:1.0em;
 font-weight:bold;
@@ -466,11 +471,18 @@ border-bottom:5px SOLID #FFE4FE;
 
 /*main page banner*/
 
-.slidewrap {
-background:url(images/slider_bg.jpg);
+.slidewrap_bg {
+background:url(images/mid_bg2.jpg);
 background-size:100% 100%;
-background-repeat:no-repeat;
+background-repeat:repeat-x;
 background-color:#00002f;
+display:block;
+}
+
+.slidewrap {
+background:url(images/mid_design2.jpg);
+background-size:580px 100%;
+background-repeat:no-repeat;
 display:block;
 min-height:235px;
 border-top:10px SOLID #92278F;
