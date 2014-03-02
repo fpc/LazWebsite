@@ -30,7 +30,7 @@ $home_php_name = 'index.php';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
-$dl_latest_version_lazarus = '1.0.14';
+$dl_latest_version_lazarus = '1.2.0';
 // the FPC version that is required by the latest lazarus
 $dl_latest_version_fpc = '2.6.2';
 
@@ -81,4 +81,4 @@ $website_domain = 'http://' . $_SERVER['HTTP_HOST'];
 // --- Pagination --- //
 //$items_per_page = 10; // in case of pagination
 
-?>
+?>
