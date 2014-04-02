@@ -54,7 +54,6 @@ if ($url_page != '') {
 
 
 
-
 // --------- User wants homepage ------------
 if ($url_page == '') {
 
@@ -146,8 +145,6 @@ if ($url_page == '') {
 	$useragent = $_SERVER['HTTP_USER_AGENT'];
 
 	// --- 32 bit or 64 bit detection
-	$os_32bit = true;
-	
 	if ((stripos($useragent, 'WOW64') !== false) || 
 		(stripos($useragent, 'Win64') !== false) || 
 		(stripos($useragent, 'x86_64') !== false) || 
@@ -161,21 +158,15 @@ if ($url_page == '') {
 		(stripos($useragent, 'IRIX64') !== false)
 	){
 		$os_32bit = false;
+		$OS_bit = '64 bit';
 	} else {
 		$os_32bit = true;
-	}
-	
-	if ($os_32bit == true)
 		$OS_bit = '32 bit';
-	else
-		$OS_bit = '64 bit';
-	
+	}
 
-	
 	//---- OS name detection
 	$ua_osfamily = 'Unknown OS';
 	$quick_download_link = $home_php_name . '?page=download';
-	
 	
 	if (stripos($useragent, 'Win') !== false) {
 		$ua_osfamily = 'Windows';
@@ -188,67 +179,49 @@ if ($url_page == '') {
 	} elseif (stripos($useragent, 'Linux') !== false) {
 		$ua_osfamily = 'Linux';
 	}
-	
+
 	// Download link and friendly OS name
 	$OSName = $ua_osfamily;
 	if ($ua_osfamily == 'Windows') {
 		$OSName = 'Windows';
-		$dl_for = $OSName;
+		$dl_other = $OSName;
 		if ($os_32bit == true) {
 			$quick_download_link = $dl_win32_url;
-			$dl_for .= ' 32 bit';
+			$dl_other .= ' 32 bit';
 		}else{
 			$quick_download_link = $dl_win64_url;
-			$dl_for .= ' 64 bit';
+			$dl_other .= ' 64 bit';
 		}
 
 	} elseif ($ua_osfamily == 'MacOS PPC') {
 		$quick_download_link = $dl_macppc_url;
 		$OSName = 'Mac OS X PowerPC';
-		$dl_for = $OSName;
+		$dl_other = $OSName;
 	} elseif ($ua_osfamily == 'MacOS') {
 		$quick_download_link = $dl_mac32_url;
 		$OSName = 'Mac OS X';
-		$dl_for = $OSName;
+		$dl_other = $OSName;
 	} elseif (($ua_osfamily == 'Unix') || ($ua_osfamily == 'Linux')) {
-		if ($os_32bit == true) 
-			$quick_download_link = $dl_deb32_url;
-		else
-			$quick_download_link = $dl_deb64_url;
-
-		/*if (stripos($useragent, 'Ubuntu') !== false)
-			$OSName = 'Ubuntu';
-		else
-			$OSName = 'Unix/Linux';
-*/
-	}
-	
-	if (($ua_osfamily == 'Unix') || ($ua_osfamily == 'Linux')) {
-		if (stripos($useragent, 'Debian') !== false) 
-			$ua_debian = '(Debian Detected)';
-		else 
-			$ua_debian = '()';
-
-		$dl_for = 'Debian ';
-		if ($os_32bit == true) {
-			$dl_for .= '32 bit';
-			$rpm_link= $dl_rpm32_url;
-		} else {
-			$dl_for .= '64 bit';
-			$rpm_link= $dl_rpm64_url;
+		if (stripos($useragent, 'RedHat') !== false) 
+		|| (stripos($useragent, 'Fedora') !== false) 
+		|| (stripos($useragent, 'CentOS') !== false) 
+		|| (stripos($useragent, 'Suse') !== false) {
+			$OSName = 'Linux RPM';
+			if ($os_32bit == true) 
+				$quick_download_link = $dl_rpm32_url;
+			else
+				$quick_download_link = $dl_rpm64_url;
+		} else {	// 'Debian', 'Ubuntu' etc.
+			$OSName = 'Linux Debian';
+			if ($os_32bit == true) 
+				$quick_download_link = $dl_deb32_url;
+			else
+				$quick_download_link = $dl_deb64_url;
 		}
-		
-		$dl_for .= ' <a href="'.$rpm_link.'">Try RPM?</a>';
-	/*} else if ($ua_osfamily == 'Windows') {
-		
-	} else {
-		$dl_for = $OSName;*/
 	}
-	
-	$tpl->assign("test", $OSName.' '.$ua_debian.'| ' . $OS_bit . ' | '. urldecode($quick_download_link).'<br />'.'For '.$dl_for);
-	
+	$tpl->assign("test", $OSName.'| ' . $OS_bit . ' | '. urldecode($quick_download_link).'<br />'.'For '.$dl_other);
 	$tpl->assign("platform_download_link", $quick_download_link);
-	$tpl->assign("platform_download_for", 'For '.$dl_for);
+	$tpl->assign("platform_download_other", 'For '.$dl_other);
 
 	//---------------- Platform detection ///
 
