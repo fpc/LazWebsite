@@ -202,21 +202,28 @@ if ($url_page == '') {
 		$OSName = 'Mac OS X';
 		$dl_other = $OSName;
 	} elseif (($ua_osfamily == 'Unix') || ($ua_osfamily == 'Linux')) {
-		if (stripos($useragent, 'RedHat') !== false) ||
-		   (stripos($useragent, 'Fedora') !== false) ||
-		   (stripos($useragent, 'CentOS') !== false) ||
-		   (stripos($useragent, 'Suse') !== false) {
+		if ((stripos($useragent, 'RedHat') !== false) ||
+		    (stripos($useragent, 'Fedora') !== false) ||
+		    (stripos($useragent, 'CentOS') !== false) ||
+		    (stripos($useragent, 'Suse') !== false)
+		) {
 			$OSName = 'Linux RPM';
-			if ($os_32bit == true) 
+			if ($os_32bit == true) {
 				$quick_download_link = $dl_rpm32_url;
-			else
+				$dl_other = $dl_deb32_url;
+			} else {
 				$quick_download_link = $dl_rpm64_url;
+				$dl_other = $dl_deb64_url;
+			}
 		} else {	// 'Debian', 'Ubuntu' etc.
 			$OSName = 'Linux Debian';
-			if ($os_32bit == true) 
+			if ($os_32bit == true) {
 				$quick_download_link = $dl_deb32_url;
-			else
+				$dl_other = $dl_rpm32_url;
+			} else {
 				$quick_download_link = $dl_deb64_url;
+				$dl_other = $dl_rpm64_url;
+			}
 		}
 	}
 	$tpl->assign("test", $OSName.'| ' . $OS_bit . ' | '. urldecode($quick_download_link).'<br />'.'For '.$dl_other);
