@@ -202,10 +202,10 @@ if ($url_page == '') {
 		$OSName = 'Mac OS X';
 		$dl_other = $OSName;
 	} elseif (($ua_osfamily == 'Unix') || ($ua_osfamily == 'Linux')) {
-		if (stripos($useragent, 'RedHat') !== false) 
-		|| (stripos($useragent, 'Fedora') !== false) 
-		|| (stripos($useragent, 'CentOS') !== false) 
-		|| (stripos($useragent, 'Suse') !== false) {
+		if (stripos($useragent, 'RedHat') !== false) ||
+		   (stripos($useragent, 'Fedora') !== false) ||
+		   (stripos($useragent, 'CentOS') !== false) ||
+		   (stripos($useragent, 'Suse') !== false) {
 			$OSName = 'Linux RPM';
 			if ($os_32bit == true) 
 				$quick_download_link = $dl_rpm32_url;
