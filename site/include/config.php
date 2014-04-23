@@ -30,9 +30,9 @@ $home_php_name = 'index.php';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
-$dl_latest_version_lazarus = '1.2.0';
+$dl_latest_version_lazarus = '1.2.2';
 // the FPC version that is required by the latest lazarus
-$dl_latest_version_fpc = '2.6.2';
+$dl_latest_version_fpc = '2.6.4';
 
 //--- Direct URLs ---
 // TODO: Get the direct download file path (with mirror recognition)
@@ -41,7 +41,7 @@ $dl_latest_version_fpc = '2.6.2';
 // http://www.google.com/url?q=http%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Ffunction.curl-getinfo.php&sa=D&sntz=1&usg=AFQjCNEtR7MVQB4n7Q1b3u5iwZOFQgHyYQ
 
 $dl_base = 'http://sourceforge.net/projects/lazarus/files/Lazarus%20'; 
-$dl_folder = '/Lazarus%201.2/';
+$dl_folder = '/Lazarus%201.2.2/';
 //$dl_folder = '/Lazarus%20' . $dl_latest_version_lazarus . '/';
 
 $dl_win32_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
