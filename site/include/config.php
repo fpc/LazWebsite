@@ -45,6 +45,7 @@ $dl_folder = '/Lazarus%201.2.2/';
 //$dl_folder = '/Lazarus%20' . $dl_latest_version_lazarus . '/';
 
 $dl_win32_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
+$dl_win32_url_folder	= $dl_base . 'Windows%2032%20bits' . $dl_folder . '';
 // Use 32-bit installer also in 64-bit Windows because of SEH issue in FPC 2.6.2.
 $dl_win64_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
 //$dl_win64_url	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
