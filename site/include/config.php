@@ -50,6 +50,7 @@ $dl_win32_url_folder	= $dl_base . 'Windows%2032%20bits' . $dl_folder . '';
 $dl_win64_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
 //$dl_win64_url	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
 $dl_win64_url_force	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
+$dl_win64_url_folder	= $dl_base . 'Windows%2064%20bits' . $dl_folder . '';
 $dl_deb32_url	= $dl_base . 'Linux%20i386%20DEB' . $dl_folder . '';
 $dl_deb64_url	= $dl_base . 'Linux%20amd64%20DEB' . $dl_folder . '';
 $dl_rpm32_url	= $dl_base . 'Linux%20i386%20RPM' . $dl_folder . '';

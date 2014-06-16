@@ -34,7 +34,10 @@ if ($url_page != '') {
 	$tpl->assign("dl_latest_version_fpc", $dl_latest_version_fpc);
 	
 	$tpl->assign("dl_win32_url", $dl_win32_url);
+	$tpl->assign("dl_win32_url_folder", $dl_win32_url_folder);
 	$tpl->assign("dl_win64_url", $dl_win64_url);
+	$tpl->assign("dl_win64_url_folder", $dl_win64_url_folder);
+	$tpl->assign("dl_win64_url_force", $dl_win64_url_force);
 	$tpl->assign("dl_deb32_url", $dl_deb32_url);
 	$tpl->assign("dl_deb64_url", $dl_deb64_url);
 	$tpl->assign("dl_rpm32_url", $dl_rpm32_url);
