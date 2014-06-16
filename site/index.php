@@ -242,7 +242,7 @@ if ($url_page == '') {
 	$tpl->assign("test", $OSName.' '.$ua_debian.'| ' . $OS_bit . ' | '. urldecode($quick_download_link).'<br />'.'For '.$dl_for);
 	
 	$tpl->assign("platform_download_link", $quick_download_link);
-	$tpl->assign("platform_download_for", 'For '.$dl_for);
+	$tpl->assign("platform_download_for", 'Version '.$dl_latest_version_lazarus.' for '.$dl_for);
 
 	//---------------- Platform detection ///
 
