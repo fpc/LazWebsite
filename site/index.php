@@ -196,11 +196,12 @@ if ($url_page == '') {
 			$dl_for .= ' 64 bit';
 		}
 
-	} elseif ($ua_osfamily == 'MacOS PPC') {
+/*	} elseif ($ua_osfamily == 'MacOS PPC') {
 		$quick_download_link = $dl_macppc_url;
 		$OSName = 'Mac OS X PowerPC';
 		$dl_for = $OSName;
-	} elseif ($ua_osfamily == 'MacOS') {
+*/
+        } elseif ($ua_osfamily == 'MacOS') {
 		$quick_download_link = $dl_mac32_url;
 		$OSName = 'Mac OS X';
 		$dl_for = $OSName;
