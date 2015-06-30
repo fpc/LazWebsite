@@ -81,10 +81,13 @@ if ($url_page == '') {
 
 		$tpl->assign("recent_posts_array",$posts);
 
-		$posts = ssi_recentTopics($num_recent = 4, $exclude_boards = null, $include_boards = $smf_announcements_board, $output_method = 'return', $first_message = true);
+//		$posts = ssi_recentTopics($num_recent = 4, $exclude_boards = null, $include_boards = $smf_announcements_board, $output_method = 'return', $first_message = true);
+        $posts = ssi_boardNews($board = $smf_announcements_board, $limit = 4, $start = null, $length = 180, $output_method = 'return');
+
 
 		for ($i = 0; $i <= 3; $i++) {
-            $posts[$i]['preview'] = str_replace('  ', ' ', $posts[$i]['preview']);
+//            $posts[$i]['preview'] = str_replace('  ', ' ', $posts[$i]['preview']);
+            $posts[$i]['preview'] = str_replace('  ', ' ', $posts[$i]['body']);
         }
 
 		// Assign the posts data
