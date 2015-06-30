@@ -87,7 +87,7 @@ if ($url_page == '') {
 
 		for ($i = 0; $i <= 3; $i++) {
 //            $posts[$i]['preview'] = str_replace('  ', ' ', $posts[$i]['preview']);
-            $posts[$i]['preview'] = str_replace('  ', ' ', strip_tags($posts[$i]['body']));
+            $posts[$i]['preview'] = str_replace('  ', ' ', strip_tags(strtr($posts[$i]['body'], array('<br />' => '&#10;'))));
         }
 
 		// Assign the posts data
