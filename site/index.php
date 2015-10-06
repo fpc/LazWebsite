@@ -230,13 +230,13 @@ if ($url_page == '') {
 		$dl_for = 'Debian ';
 		if ($os_32bit == true) {
 			$dl_for .= '32 bit';
-			$rpm_link= $dl_rpm32_url;
+			$rpm_link= $dl_deb32_url; // $dl_rpm32_url;
 		} else {
 			$dl_for .= '64 bit';
-			$rpm_link= $dl_rpm64_url;
+			$rpm_link= $dl_deb64_url; // $dl_rpm64_url;
 		}
 		
-		$dl_for .= ' <a href="'.$rpm_link.'">Try RPM?</a>';
+		$dl_for .= ' <a href="'.$rpm_link.'">Try DEB?</a>';
 	/*} else if ($ua_osfamily == 'Windows') {
 		
 	} else {
