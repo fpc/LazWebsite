@@ -30,10 +30,10 @@ $home_php_name = 'index.php';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
-$dl_latest_version_lazarus = '1.4.4';
-$dl_latest_version_dir= '1.4.4';  // could be 1.2, for version 1.2.0
+$dl_latest_version_lazarus = '1.6.0';
+$dl_latest_version_dir= '1.6';  // could be 1.2, for version 1.2.0
 // the FPC version that is required by the latest lazarus
-$dl_latest_version_fpc = '2.6.4';
+$dl_latest_version_fpc = '3.0.0';
 
 //--- Direct URLs ---
 // TODO: Get the direct download file path (with mirror recognition)
@@ -46,10 +46,8 @@ $dl_folder = '/Lazarus%20' . $dl_latest_version_dir . '/';
 
 $dl_win32_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
 $dl_win32_url_folder	= $dl_base . 'Windows%2032%20bits' . $dl_folder . '';
-// Use 32-bit installer also in 64-bit Windows because of SEH issue in FPC 2.6.2.
-$dl_win64_url	= $dl_base . 'Windows%2032%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win32.exe/download';
-//$dl_win64_url	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
-$dl_win64_url_force	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
+$dl_win64_url	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
+//$dl_win64_url_force	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl_latest_version_lazarus . '-fpc-' . $dl_latest_version_fpc . '-win64.exe/download';
 $dl_win64_url_folder	= $dl_base . 'Windows%2064%20bits' . $dl_folder . '';
 $dl_deb32_url	= $dl_base . 'Linux%20i386%20DEB' . $dl_folder . '';
 $dl_deb64_url	= $dl_base . 'Linux%20amd64%20DEB' . $dl_folder . '';
