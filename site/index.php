@@ -55,6 +55,7 @@ if ($url_page != '') {
 	$tpl->assign("smf_announcements_board", $smf_announcements_board);
 	$tpl->assign("smf_index", $smf_index);
 
+	$tpl->assign("wiki_changes", $wiki_changes);
 
 
 // --------- User wants homepage ------------
