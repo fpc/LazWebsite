@@ -66,9 +66,9 @@ $dl_sources_url	= $dl_base . 'Zip%20_%20GZip' . $dl_folder . '';
 
 $smf_announcements_board = 18;
 // This is for post/thread/topic links in the actual forum (SSI.php will use current site url as default)
-$smf_index = 'http://forum.lazarus-ide.org/index.php';
+$smf_index = 'http://forum.lazarus.freepascal.org/index.php';
 // This is for the forum home page link
-$smf_home = 'http://forum.lazarus-ide.org/index.php?action=forum';
+$smf_home = 'http://forum.lazarus.freepascal.org/index.php?action=forum';
 // the path for SMF's SSI.php
 $smf_ssi = dirname(ABSPATH) . '/smf/SSI.php';
 
