@@ -30,14 +30,14 @@ $home_php_name = 'index.php';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
-$dl_latest_version_lazarus = '1.6.4';
-$dl_latest_version_dir= '1.6.4';  // could be 1.2, for version 1.2.0
+$dl_latest_version_lazarus = '1.8.0';
+$dl_latest_version_dir= '1.8.0';  // could be 1.2, for version 1.2.0
 // the FPC version that is required by the latest lazarus
-$dl_latest_version_fpc = '3.0.2';
+$dl_latest_version_fpc = '3.0.4';
 
 // whats new link at the bottom of main page
 //$wiki_changes = 'http://wiki.lazarus.freepascal.org/Lazarus_1.6.0_release_notes';
-$wiki_changes = 'http://wiki.lazarus.freepascal.org/Lazarus_1.6_fixes_branch';
+$wiki_changes = 'http://wiki.lazarus.freepascal.org/Lazarus_1.8_fixes_branch';
 
 //--- Direct URLs ---
 // TODO: Get the direct download file path (with mirror recognition)
