@@ -30,8 +30,8 @@ $home_php_name = 'index.php';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
-$dl_latest_version_lazarus = '1.8.2';
-$dl_latest_version_dir= '1.8.2';  // could be 1.2, for version 1.2.0
+$dl_latest_version_lazarus = '1.8.4';
+$dl_latest_version_dir= '1.8.4';  // could be 1.2, for version 1.2.0
 // the FPC version that is required by the latest lazarus
 $dl_latest_version_fpc = '3.0.4';
 
