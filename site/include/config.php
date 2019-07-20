@@ -28,6 +28,8 @@ $error_webmaster_email = 'lazarus@freepascal.org';
 $home_php_name = 'index.php';
 
 
+$copyrightyear = '2019';
+
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
 $dl_latest_version_lazarus = '2.0.2';
