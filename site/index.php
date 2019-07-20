@@ -30,6 +30,8 @@ if ($url_page != '') {
 
 // for using the direct download links in the templates
 
+	$tpl->assign("copyrightyear", $copyrightyear);
+
 	$tpl->assign("dl_latest_version_lazarus", $dl_latest_version_lazarus);
 	$tpl->assign("dl_latest_version_fpc", $dl_latest_version_fpc);
 	
