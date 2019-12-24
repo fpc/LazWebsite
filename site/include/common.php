@@ -87,6 +87,14 @@ $tpl->assign("page_author", WEBSITE_AUTHOR);
 $tpl->assign("theme_path", $cms_theme_path);
 $tpl->assign("website_domain", $website_domain);
 
+//
+$date = getdate();
+if (($date['mon'] == 12) and ($date['mday'] >= 20)) {
+  $tpl->assign("extra_head_content", '
+    <link rel="stylesheet" type="text/css" href="snow.css">
+    <script type="text/javascript" src="snow.js"></script>
+  ');
+};
 
 include_once(ABSPATH . "include/constants.php");
 
