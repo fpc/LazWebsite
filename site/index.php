@@ -45,6 +45,7 @@ if ($url_page != '') {
 	$tpl->assign("dl_rpm32_url", $dl_rpm32_url);
 	$tpl->assign("dl_rpm64_url", $dl_rpm64_url);
 	$tpl->assign("dl_mac32_url", $dl_mac32_url);
+	$tpl->assign("dl_mac64_url", $dl_mac64_url);
 	$tpl->assign("dl_macppc_url", $dl_macppc_url);
 	$tpl->assign("dl_sources_url", $dl_sources_url);
 
