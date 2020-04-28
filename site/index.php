@@ -208,10 +208,11 @@ if ($url_page == '') {
 		$OSName = 'Mac OS X PowerPC';
 		$dl_for = $OSName;
 */
-        } elseif ($ua_osfamily == 'MacOS') {
-		$quick_download_link = $dl_mac32_url;
-		$OSName = 'Mac OS X';
-		$dl_for = $OSName;
+    } elseif ($ua_osfamily == 'MacOS') {
+			$quick_download_link = $dl_mac64_url;
+			$OSName = 'macOS';
+			$dl_for = $OSName;
+			$dl_for .= ' 64 bit';
 	} elseif (($ua_osfamily == 'Unix') || ($ua_osfamily == 'Linux')) {
 		if ($os_32bit == true) 
 			$quick_download_link = $dl_deb32_url;
