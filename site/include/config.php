@@ -32,10 +32,10 @@ $copyrightyear = '2020';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
-$dl_latest_version_lazarus = '2.0.8';
-$dl_latest_version_dir= '2.0.8';  // could be 1.2, for version 1.2.0
+$dl_latest_version_lazarus = '2.0.10';
+$dl_latest_version_dir= '2.0.10';  // could be 1.2, for version 1.2.0
 // the FPC version that is required by the latest lazarus
-$dl_latest_version_fpc = '3.0.4';
+$dl_latest_version_fpc = '3.2.0';
 
 // whats new link at the bottom of main page
 //$wiki_changes = 'https://wiki.lazarus.freepascal.org/Lazarus_2.0.0_release_notes';
