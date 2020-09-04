@@ -255,6 +255,7 @@ font-weight:normal;
 position:relative; 
 display:table-cell; 
 float: none !important;
+width: 33.3%
 }
 
 @media (max-width:769px){
