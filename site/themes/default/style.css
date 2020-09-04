@@ -255,7 +255,7 @@ font-weight:normal;
 position:relative; 
 display:table-cell; 
 float: none !important;
-width: 33.3%
+width: 33.3%;
 }
 
 @media (max-width:769px){
@@ -264,6 +264,7 @@ position:relative;
 display:block !important; 
 float: none !important;
 margin-bottom: 20px;
+width: 100% !important;
 }
 }
 
