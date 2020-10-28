@@ -180,17 +180,15 @@
 		<div class="contentsection">
 			<div class="contentbox contentbox_grey randproj">
 				<div class="row">
-					<div class="col-md-4"><div class="columnn_inner">
-						<div class="randproj_note">
-							<h2>Random Project</h2>
-							<p  class="content_more">from our 
-							<a href="https://wiki.freepascal.org/Projects_using_Free_Pascal">showcase</a>
-							.<br />
-							This is an example of what can be done with Lazarus</p>
-						</div>
-					</div></div>
-					<div class="col-md-8"><div class="columnn_inner">
-						<p class="randproj_text">
+					<div class="col-md-4 columnn_inner randproj_note">
+						<h2>Random Project</h2>
+						<p>
+							from our <a href="https://wiki.freepascal.org/Projects_using_Free_Pascal">showcase</a>.<br />
+							This is an example of what can be done with Lazarus
+						</p>
+					</div>
+					<div class="col-md-8 columnn_inner randproj_text">
+						<p >
 							<img src="randproj/{ $rand_proj_img }" alt="{ $rand_proj_title }" title="{ $rand_proj_title }" height="70" />
 							{ $rand_proj_desc }
 
@@ -198,27 +196,25 @@
 							<a href="{ $rand_proj_link }" >Visit project homepage</a>
 							</span>
 						</p>
-					</div></div>
-					<div class="clear"></div>
-				<div class="clear"></div>
+					</div>
 				</div>
 			</div>
-			<div class="clear"></div>
 		</div>
 
 
 		<div class="contentsection">
 			<div class="contentbox contentbox_grey tipofday">
-			<div class="row"><div><div class="columnn_inner">
-				<p>
-						<img  style="float: right; max-width: 66%; padding-left: 20px" src="{ $tip_of_the_day_img }"</img>
-						<h2><strong>Tip of the day: </strong></h2>
+				<div class="row">
+					<div class="col-md-4 columnn_inner tipofday_note">
+						<h2>Tip of the day</h2>
 						<p>{ $tip_of_the_day_desc }</p>
-				</p>			
-			</div>
-			</div><div class="clear"></div>
-			</div>
-			</div><div class="clear">
+					</div>
+					<div class="col-md-8 columnn_inner tipofday_text">
+						<p>
+							<img  style="max-width: 100%;" src="{ $tip_of_the_day_img }"</img>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 

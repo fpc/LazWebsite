@@ -386,6 +386,8 @@ padding-right:20px;
 margin:0px 0 5px 0;
 }
 .randproj_text {
+}
+.randproj_text p {
 font-size:1.3em;
 }
 .randproj_note {
