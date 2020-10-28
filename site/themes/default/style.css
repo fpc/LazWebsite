@@ -378,9 +378,26 @@ margin-bottom:5px;
 
 
 
+.lazbook {
+min-height:50px;
+}
+.lazbook h2 {
+margin:0px 0 5px 0;
+}
+
+.lazbook p {
+font-size:1.3em;
+}
+.lazbook img {
+float:left;
+padding-right:20px;
+height:100px;
+}
+
 .randproj img {
 float:left;
 padding-right:20px;
+height:70px;
 }
 .randproj h2 {
 margin:0px 0 5px 0;
