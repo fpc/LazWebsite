@@ -73,7 +73,7 @@ $smf_index = 'https://forum.lazarus.freepascal.org/index.php';
 // This is for the forum home page link
 $smf_home = 'https://forum.lazarus.freepascal.org/index.php?action=forum';
 // the path for SMF's SSI.php
-$smf_ssi = dirname(ABSPATH) . '/smf/SSI.php';
+$smf_ssi = '/var/www/sites/smf/SSI.php';
 
 // We don't need this for an international site
 // Let the server return the time as it is
