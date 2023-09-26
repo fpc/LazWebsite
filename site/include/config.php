@@ -28,7 +28,7 @@ $error_webmaster_email = 'lazarus@freepascal.org';
 $home_php_name = 'index.php';
 
 
-$copyrightyear = '2022';
+$copyrightyear = '2023';
 
 //------ Download Information (Link/version/mirror...) -----//
 //--- versions ---
