@@ -59,8 +59,8 @@ $dl_deb32_url	= $dl_base . 'Linux%20i386%20DEB' . $dl_folder . '';
 $dl_deb64_url	= $dl_base . 'Linux%20amd64%20DEB' . $dl_folder . '';
 $dl_rpm32_url	= $dl_base . 'Linux%20i386%20RPM' . $dl_folder . '';
 $dl_rpm64_url	= $dl_base . 'Linux%20x86_64%20RPM' . $dl_folder . '';
-$dl_mac32_url	= $dl_base . 'Mac%20OS%20X%20i386' . $dl_folder . '';
-$dl_mac64_url	= $dl_base . 'macOS%20x86-64' . $dl_folder . '';
+$dl_macxaarch64_url	= $dl_base . 'macOS%20aarch64' . $dl_folder . '';
+$dl_macx86_64_url	= $dl_base . 'macOS%20x86-64' . $dl_folder . '';
 $dl_macppc_url	= $dl_base . 'Mac%20OS%20X%20powerpc' . $dl_folder . '';
 $dl_sources_url	= $dl_base . 'Zip%20_%20GZip' . $dl_folder . '';
 
