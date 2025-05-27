@@ -42,6 +42,7 @@ if ($url_page != '') {
 	$tpl->assign("dl_win64_url_force", $dl_win64_url_force);
 	$tpl->assign("dl_deb32_url", $dl_deb32_url);
 	$tpl->assign("dl_deb64_url", $dl_deb64_url);
+	$tpl->assign("dl_rpi_url", $dl_rpi_url);
 	$tpl->assign("dl_rpm32_url", $dl_rpm32_url);
 	$tpl->assign("dl_rpm64_url", $dl_rpm64_url);
 	$tpl->assign("dl_macaarch64_url", $dl_macaarch64_url);

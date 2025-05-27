@@ -57,6 +57,7 @@ $dl_win64_url	= $dl_base . 'Windows%2064%20bits' . $dl_folder . 'lazarus-' . $dl
 $dl_win64_url_folder	= $dl_base . 'Windows%2064%20bits' . $dl_folder . '';
 $dl_deb32_url	= $dl_base . 'Linux%20i386%20DEB' . $dl_folder . '';
 $dl_deb64_url	= $dl_base . 'Linux%20amd64%20DEB' . $dl_folder . '';
+$dl_rpi_url		= $dl_base . 'Linux%20arm64%20DEB' . $dl_folder . '';
 $dl_rpm32_url	= $dl_base . 'Linux%20i386%20RPM' . $dl_folder . '';
 $dl_rpm64_url	= $dl_base . 'Linux%20x86_64%20RPM' . $dl_folder . '';
 $dl_macaarch64_url	= $dl_base . 'macOS%20aarch64' . $dl_folder . '';
